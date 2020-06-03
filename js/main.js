@@ -138,5 +138,10 @@ $(document).ready(function(){
   });
 });
 
+//set responsive page 1 navbar
+$(document).ready(function(){
+  
+});
+//__ end of set responsive navbar____
 
 

@@ -51,6 +51,69 @@ body .header .navbar .logo img {
   margin: auto;
 }
 
+@media only screen and (max-width: 1723px) {
+  body .header .navbar .logo {
+    width: 6%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1485px) {
+  body .header .navbar .logo {
+    width: 7%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1238px) {
+  body .header .navbar .logo {
+    width: 8%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 1077px) {
+  body .header .navbar .logo {
+    width: 9%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body .header .navbar .logo {
+    width: 10%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  body .header .navbar .logo {
+    width: 11%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  body .header .navbar .logo {
+    width: 12%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  body .header .navbar .logo {
+    width: 13%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body .header .navbar .logo {
+    width: 14%;
+    height: auto;
+  }
+}
+
 body .header .navbar .justifycontent {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -127,6 +190,24 @@ body .header .navbar .justifycontent ul a:hover::after {
           transform-origin: left;
 }
 
+@media only screen and (max-width: 780px) {
+  body .header .navbar .justifycontent ul a {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  body .header .navbar .justifycontent ul a {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body .header .navbar .justifycontent ul li, body .header .navbar .justifycontent ul a {
+    display: none;
+  }
+}
+
 body .header .navbar .justifycontent .menuitems {
   margin: 0 2em 0 0;
   display: -webkit-box;
@@ -162,6 +243,23 @@ body .header .navbar .justifycontent .menuitems ul a {
 
 body .header .navbar .justifycontent .menuitems ul i {
   font-size: 1.5em;
+}
+
+@media only screen and (min-width: 1325px) {
+  body .header .navbar .justifycontent .menuitems ul .fa-bars {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1325px) {
+  body .header .navbar .justifycontent .menuitems ul li {
+    display: none;
+  }
+  body .header .navbar .justifycontent .menuitems ul li:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 body .header .vidheader {

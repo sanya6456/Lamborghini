@@ -31,6 +31,60 @@ body{
                     margin: auto;
                 }
             }
+            @media only screen and(max-width:1723px){
+                .logo{
+                    width: 6%;
+                    height: auto;
+                }        
+            }
+            @media only screen and(max-width:1485px){
+                .logo{
+                    width: 7%;
+                    height: auto;
+                }        
+            }
+            @media only screen and(max-width:1238px){
+                .logo{
+                    width: 8%;
+                    height: auto;
+                }        
+            }
+            @media only screen and(max-width:1077px){
+                .logo{
+                    width: 9%;
+                    height: auto;
+                }        
+            }
+            @media only screen and(max-width:900px){
+                .logo{
+                    width: 10%;
+                    height: auto;
+                }        
+            }
+            @media only screen and(max-width:780px){
+                .logo{
+                    width: 11%;
+                    height: auto;
+                }        
+            }
+            @media only screen and(max-width:680px){
+                .logo{
+                    width: 12%;
+                    height: auto;
+                }        
+            }
+            @media only screen and(max-width:580px){
+                .logo{
+                    width: 13%;
+                    height: auto;
+                }        
+            }
+            @media only screen and(max-width:480px){
+                .logo{
+                    width: 14%;
+                    height: auto;
+                }        
+            }
             .justifycontent{
                 justify-content: space-between;
                 display: flex;
@@ -81,6 +135,21 @@ body{
                             transform-origin: left;
                         }
                     }
+                    @media only screen and(max-width:780px){
+                        a{
+                            font-size: 1.1em;
+                        }
+                    }
+                    @media only screen and(max-width:750px){
+                        a{
+                            font-size: 1em;
+                        }
+                    }
+                    @media only screen and(max-width:700px){
+                        li,a{
+                            display: none;
+                        }
+                    }
                 }
                 
                 .menuitems{
@@ -104,6 +173,21 @@ body{
                         }
                         i{
                             font-size: 1.5em;
+                        }
+                        @media only screen and(min-width:1325px){
+                            .fa-bars{
+                                display: none;
+                            }
+                        }
+
+
+                        @media only screen and(max-width:1325px){
+                            li{
+                                display: none;
+                                &:last-child{
+                                    display: flex;
+                                }
+                            }
                         }
                     }
                 }
