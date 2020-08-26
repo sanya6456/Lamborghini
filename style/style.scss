@@ -1,3 +1,5 @@
+@import './sass-options/_sass';
+
 *{
     box-sizing: border-box;
 }
@@ -7,18 +9,15 @@ body{
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
     .header{
-        height: 100vh;
-        overflow: hidden;
-        width: 100%;
-        margin: 0;
+        @include whm(100%,100vh,0);
         display: flex;
         flex-direction: column;
         .navbar{
             position: absolute;
             width: 100%;
-            background-color: #181818;
+            background-color: $black-color;
             display: flex;
-            box-shadow: 0 0 4px #181818;
+            box-shadow: 0 0 4px $black-color;
             .logo{
                 display: flex;
                 width: 5%;
@@ -98,7 +97,7 @@ body{
                         .fas{
                         display: block;
                         padding: 0.8rem 1rem;
-                        color: #e0e0e0;
+                        color: $white-color;
                         text-align: center;
                         font-size: 1.2em;
                         height: 100%;
@@ -110,7 +109,7 @@ body{
                         display: block;
                         text-decoration: none;
                         padding: 0.8rem 1rem;
-                        color: #e0e0e0;
+                        color: $white-color;
                         text-align: center;
                         font-size: 1.3em;
                         height: 100%;
@@ -124,7 +123,7 @@ body{
                             position: absolute;
                             top: 100%;
                             left: 0;
-                            background: #d79719;
+                            background: $gold-color;
                             transition: transform 0.5s;
                             transform: scaleX(0);
                             transform-origin: right;
@@ -167,7 +166,7 @@ body{
                             display: block;
                             text-decoration: none;
                             padding: 0.8rem 1rem;
-                            color: #e0e0e0;
+                            color: $white-color;
                             text-align: center;
                             font-size: 1.2em;
                         }
@@ -201,8 +200,6 @@ body{
             transform: translate(-50%, -50%);
             min-width: 100%;
             min-height: 100%;
-            width: auto;
-            height: auto;
             z-index: -1;
         }
 
@@ -213,7 +210,7 @@ body{
         height: 100vh;
         margin: 0;
         overflow-x: hidden;
-        background-color: #181818;
+        background-color: $black-color;
         .swiper-container{
             width: 100%;
             height: 100%;
@@ -230,7 +227,7 @@ body{
                 position: absolute;
                 cursor: pointer;
                 i{
-                    color: #997d1f;
+                    color: $gold-color;
                     font-size: 3em;
                 }
             }
@@ -248,9 +245,9 @@ body{
                 z-index: 1000;
                 align-items: center;
                 text-align: center;
-                background-color: #181818;
+                background-color: $black-color;
                 align-items: center;
-                box-shadow: 0 0 6px #181818;
+                box-shadow: 0 0 6px $black-color;
                 ul{
                     margin: 0;
                     position: absolute;
@@ -270,7 +267,7 @@ body{
                         margin: 0 10% 0 0;
                         width: 100%;
                         height: auto;
-                        border-bottom: 1px groove rgb(131, 131, 131);
+                        border-bottom: 1px groove $grey-color;
                         &:nth-child(5){
                             border-bottom: none;
                         }
@@ -284,18 +281,18 @@ body{
                         height: auto;
                         display: inline-block;
                         text-decoration: none;
-                        color: #777777;
+                        color: $grey-color;
                         font-weight: 900;
                         cursor: pointer;
                         margin:0;
                         &:hover{
-                            color: #997d1f;
+                            color: $gold-color;
                         }
                     }
                     h2{
                         width: 100%;
                         padding: 5% 10% 10% 0;
-                        color: #181818;
+                        color: $black-color;
                         text-shadow: 0 0 2px white;
                         font-size: 3em;
                         //text-transform: uppercase;
@@ -312,9 +309,9 @@ body{
                             cursor: pointer;
                             display: flex;
                             font-size: 3em;
-                            color: rgb(156, 156, 156);
+                            color: $grey-color;
                             &:hover{
-                                color:#997d1f;
+                                color:$gold-color;
                                 transform: scale(1.1);
                             }
                         }
@@ -331,7 +328,7 @@ body{
                 z-index: 1;
                 //animation: showtitle 3s forwards;
                 h2{
-                    color: #997d1f;
+                    color: $gold-color;
                     margin-top: 5%;
                     font-size: 2em;
                     text-transform: uppercase;
@@ -342,10 +339,10 @@ body{
                     font-size: 1.4em;
                     text-transform: uppercase;
                     font-weight: 100;
-                    color: darken(#997d1f,8%);
+                    color: darken($gold-color,8%);
                 }
                 h3{
-                    color: #997d1f;
+                    color: $gold-color;
                     margin-top: 5%;
                     font-size: 2em;
                     text-transform: uppercase;
@@ -356,7 +353,7 @@ body{
                     font-size: 1.4em;
                     text-transform: uppercase;
                     font-weight: 100;
-                    color: darken(#997d1f,8%);
+                    color: darken($gold-color,8%);
                     line-height: 0;
                 }
             }
@@ -364,7 +361,7 @@ body{
                 display: flex;
                 flex-direction: column;
                 margin: 0;
-                color: #ffffff;
+                color: $white-color;
                 text-align: center;
                 .bigtitle{
                     h2{
@@ -382,7 +379,7 @@ body{
                     width: 100%;
                     height: 100%;
                     margin: 0;
-                    color: #fff;
+                    color: $white-color;
                     .swipergallery{
                         width: 100%;
                         height: 70%;
@@ -414,7 +411,7 @@ body{
             }
             .swiper-button-next, .swiper-button-prev{
                 padding: 0 4%;
-                color:#997d1f;
+                color:$gold-color;
                 font-weight: 1000;
             }
         }

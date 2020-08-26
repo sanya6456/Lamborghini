@@ -1,0 +1,17 @@
+//font-colors
+$white-color:#e0e0e0;
+$gold-color: #d79719;
+$black-color:#181818;
+$grey-color: #777777;
+
+//width-height-margin
+
+$width:width;
+$height:height;
+$margin:margin;
+
+@mixin whm ($width,$height,$margin){
+    width:$width;
+    height:$height;
+    margin:$margin;
+}

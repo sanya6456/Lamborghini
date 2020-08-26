@@ -11,9 +11,8 @@ body {
 }
 
 body .header {
-  height: 100vh;
-  overflow: hidden;
   width: 100%;
+  height: 100vh;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -270,8 +269,6 @@ body .header .vidheader {
           transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100%;
-  width: auto;
-  height: auto;
   z-index: -1;
 }
 
@@ -302,7 +299,7 @@ body .container .swiper-container .burgericon {
 }
 
 body .container .swiper-container .burgericon i {
-  color: #997d1f;
+  color: #d79719;
   font-size: 3em;
 }
 
@@ -359,7 +356,7 @@ body .container .swiper-container .hamburgermenushow ul li {
   margin: 0 10% 0 0;
   width: 100%;
   height: auto;
-  border-bottom: 1px groove #838383;
+  border-bottom: 1px groove #777777;
 }
 
 body .container .swiper-container .hamburgermenushow ul li:nth-child(5) {
@@ -383,7 +380,7 @@ body .container .swiper-container .hamburgermenushow ul a {
 }
 
 body .container .swiper-container .hamburgermenushow ul a:hover {
-  color: #997d1f;
+  color: #d79719;
 }
 
 body .container .swiper-container .hamburgermenushow ul h2 {
@@ -417,11 +414,11 @@ body .container .swiper-container .hamburgermenushow ul .socialmedia i {
   display: -ms-flexbox;
   display: flex;
   font-size: 3em;
-  color: #9c9c9c;
+  color: #777777;
 }
 
 body .container .swiper-container .hamburgermenushow ul .socialmedia i:hover {
-  color: #997d1f;
+  color: #d79719;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -441,7 +438,7 @@ body .container .swiper-container .swipertitle {
 }
 
 body .container .swiper-container .swipertitle h2 {
-  color: #997d1f;
+  color: #d79719;
   margin-top: 5%;
   font-size: 2em;
   text-transform: uppercase;
@@ -453,11 +450,11 @@ body .container .swiper-container .swipertitle p {
   font-size: 1.4em;
   text-transform: uppercase;
   font-weight: 100;
-  color: #776118;
+  color: #b27d15;
 }
 
 body .container .swiper-container .swipertitle h3 {
-  color: #997d1f;
+  color: #d79719;
   margin-top: 5%;
   font-size: 2em;
   text-transform: uppercase;
@@ -469,7 +466,7 @@ body .container .swiper-container .swipertitle h4 {
   font-size: 1.4em;
   text-transform: uppercase;
   font-weight: 100;
-  color: #776118;
+  color: #b27d15;
   line-height: 0;
 }
 
@@ -482,7 +479,7 @@ body .container .swiper-container .titlesection {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: 0;
-  color: #ffffff;
+  color: #e0e0e0;
   text-align: center;
 }
 
@@ -502,7 +499,7 @@ body .container .swiper-container .swiper-wrapper .swiper-slide {
   width: 100%;
   height: 100%;
   margin: 0;
-  color: #fff;
+  color: #e0e0e0;
 }
 
 body .container .swiper-container .swiper-wrapper .swiper-slide .swipergallery {
@@ -550,7 +547,7 @@ body .container .swiper-container .swiper-wrapper .swiper-slide .swipergallery .
 
 body .container .swiper-container .swiper-button-next, body .container .swiper-container .swiper-button-prev {
   padding: 0 4%;
-  color: #997d1f;
+  color: #d79719;
   font-weight: 1000;
 }
 
