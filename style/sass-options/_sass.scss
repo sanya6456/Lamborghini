@@ -15,3 +15,7 @@ $margin:margin;
     height:$height;
     margin:$margin;
 }
+@mixin flexcol {
+    display: flex;
+    flex-direction: column;
+}

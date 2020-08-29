@@ -35,82 +35,20 @@ body .header .navbar {
 }
 
 body .header .navbar .logo {
+  width: 5%;
+  height: auto;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 5%;
-  height: auto;
   padding: 1em;
   cursor: pointer;
 }
 
 body .header .navbar .logo img {
-  height: 100%;
   width: 100%;
+  height: 100%;
   margin: auto;
-}
-
-@media only screen and (max-width: 1723px) {
-  body .header .navbar .logo {
-    width: 6%;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 1485px) {
-  body .header .navbar .logo {
-    width: 7%;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 1238px) {
-  body .header .navbar .logo {
-    width: 8%;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 1077px) {
-  body .header .navbar .logo {
-    width: 9%;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  body .header .navbar .logo {
-    width: 10%;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 780px) {
-  body .header .navbar .logo {
-    width: 11%;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 680px) {
-  body .header .navbar .logo {
-    width: 12%;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 580px) {
-  body .header .navbar .logo {
-    width: 13%;
-    height: auto;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  body .header .navbar .logo {
-    width: 14%;
-    height: auto;
-  }
 }
 
 body .header .navbar .justifycontent {
@@ -166,6 +104,7 @@ body .header .navbar .justifycontent ul a::after {
   content: '';
   width: 90%;
   height: 3px;
+  margin: 0 5%;
   display: block;
   position: absolute;
   top: 100%;
@@ -179,7 +118,6 @@ body .header .navbar .justifycontent ul a::after {
           transform: scaleX(0);
   -webkit-transform-origin: right;
           transform-origin: right;
-  margin: 0 5%;
 }
 
 body .header .navbar .justifycontent ul a:hover::after {
@@ -209,9 +147,6 @@ body .header .navbar .justifycontent ul a:hover::after {
 
 body .header .navbar .justifycontent .menuitems {
   margin: 0 2em 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 body .header .navbar .justifycontent .menuitems ul {
@@ -273,7 +208,8 @@ body .header .vidheader {
 }
 
 body .container {
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   margin: 0;
   overflow-x: hidden;
   background-color: #181818;
@@ -283,8 +219,8 @@ body .container .swiper-container {
   width: 100%;
   height: 100%;
   margin: 0;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), color-stop(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.9))), url(gallery/carbg01.jpg);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url(gallery/carbg01.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), color-stop(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.9))), url(../gallery/carbg01.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.9)), url(../gallery/carbg01.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -304,6 +240,8 @@ body .container .swiper-container .burgericon i {
 }
 
 body .container .swiper-container .hamburgermenushow {
+  width: 28%;
+  height: 100%;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,26 +253,20 @@ body .container .swiper-container .hamburgermenushow {
   position: absolute;
   top: 0;
   left: 0;
-  width: 28%;
-  height: 100%;
   z-index: 1000;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
   background-color: #181818;
-  align-items: center;
   -webkit-box-shadow: 0 0 6px #181818;
           box-shadow: 0 0 6px #181818;
 }
 
 body .container .swiper-container .hamburgermenushow ul {
-  margin: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,6 +274,9 @@ body .container .swiper-container .hamburgermenushow ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
   text-align: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -350,12 +285,11 @@ body .container .swiper-container .hamburgermenushow ul {
 
 body .container .swiper-container .hamburgermenushow ul li {
   width: 100%;
+  height: auto;
+  margin: 0 10% 0 0;
   display: inline-block;
   list-style: none;
   font-size: 1.3em;
-  margin: 0 10% 0 0;
-  width: 100%;
-  height: auto;
   border-bottom: 1px groove #777777;
 }
 
@@ -371,12 +305,12 @@ body .container .swiper-container .hamburgermenushow ul a {
   padding: 5% 0;
   width: 100%;
   height: auto;
+  margin: 0;
   display: inline-block;
   text-decoration: none;
   color: #777777;
   font-weight: 900;
   cursor: pointer;
-  margin: 0;
 }
 
 body .container .swiper-container .hamburgermenushow ul a:hover {
@@ -426,6 +360,7 @@ body .container .swiper-container .hamburgermenushow ul .socialmedia i:hover {
 body .container .swiper-container .swipertitle {
   width: 100%;
   height: 30%;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -505,6 +440,7 @@ body .container .swiper-container .swiper-wrapper .swiper-slide {
 body .container .swiper-container .swiper-wrapper .swiper-slide .swipergallery {
   width: 100%;
   height: 70%;
+  margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,19 +463,7 @@ body .container .swiper-container .swiper-wrapper .swiper-slide .swipergallery .
   display: flex;
 }
 
-body .container .swiper-container .swiper-wrapper .swiper-slide .swipergallery .pictureswiper .svj011 {
-  width: 40%;
-  height: auto;
-  margin: auto auto 2% auto;
-}
-
-body .container .swiper-container .swiper-wrapper .swiper-slide .swipergallery .pictureswiper .sroadster011 {
-  width: 40%;
-  height: auto;
-  margin: auto auto 2% auto;
-}
-
-body .container .swiper-container .swiper-wrapper .swiper-slide .swipergallery .pictureswiper .s011 {
+body .container .swiper-container .swiper-wrapper .swiper-slide .swipergallery .pictureswiper .svj011, body .container .swiper-container .swiper-wrapper .swiper-slide .swipergallery .pictureswiper .sroadster011, body .container .swiper-container .swiper-wrapper .swiper-slide .swipergallery .pictureswiper .s011 {
   width: 40%;
   height: auto;
   margin: auto auto 2% auto;

@@ -10,8 +10,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     .header{
         @include whm(100%,100vh,0);
-        display: flex;
-        flex-direction: column;
+        @include flexcol;
         .navbar{
             position: absolute;
             width: 100%;
@@ -19,70 +18,13 @@ body{
             display: flex;
             box-shadow: 0 0 4px $black-color;
             .logo{
+                @include whm(5%,auto,0);
                 display: flex;
-                width: 5%;
-                height: auto;
                 padding: 1em;
                 cursor: pointer;
                 img{
-                    height: 100%;
-                    width: 100%;
-                    margin: auto;
+                    @include whm(100%,100%,auto);
                 }
-            }
-            @media only screen and(max-width:1723px){
-                .logo{
-                    width: 6%;
-                    height: auto;
-                }        
-            }
-            @media only screen and(max-width:1485px){
-                .logo{
-                    width: 7%;
-                    height: auto;
-                }        
-            }
-            @media only screen and(max-width:1238px){
-                .logo{
-                    width: 8%;
-                    height: auto;
-                }        
-            }
-            @media only screen and(max-width:1077px){
-                .logo{
-                    width: 9%;
-                    height: auto;
-                }        
-            }
-            @media only screen and(max-width:900px){
-                .logo{
-                    width: 10%;
-                    height: auto;
-                }        
-            }
-            @media only screen and(max-width:780px){
-                .logo{
-                    width: 11%;
-                    height: auto;
-                }        
-            }
-            @media only screen and(max-width:680px){
-                .logo{
-                    width: 12%;
-                    height: auto;
-                }        
-            }
-            @media only screen and(max-width:580px){
-                .logo{
-                    width: 13%;
-                    height: auto;
-                }        
-            }
-            @media only screen and(max-width:480px){
-                .logo{
-                    width: 14%;
-                    height: auto;
-                }        
             }
             .justifycontent{
                 justify-content: space-between;
@@ -117,8 +59,7 @@ body{
                         font-weight: 500;
                         &::after{
                             content: '';
-                            width: 90%;
-                            height: 3px;
+                            @include whm(90%,3px,0 5%);
                             display: block;
                             position: absolute;
                             top: 100%;
@@ -127,7 +68,6 @@ body{
                             transition: transform 0.5s;
                             transform: scaleX(0);
                             transform-origin: right;
-                            margin: 0 5%;
                         }
                         &:hover::after{
                             transform: scaleX(1);
@@ -153,7 +93,6 @@ body{
                 
                 .menuitems{
                     margin: 0 2em 0 0;
-                    display: flex;
                     ul{
                         display: flex;
                         list-style: none;
@@ -207,15 +146,12 @@ body{
 
     }
     .container{
-        height: 100vh;
-        margin: 0;
+        @include whm(100%,100%,0);
         overflow-x: hidden;
         background-color: $black-color;
         .swiper-container{
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            background-image: linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,.85),rgba(0,0,0,.9)) ,url(gallery/carbg01.jpg);
+            @include whm(100%,100%,0);
+            background-image: linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,.85),rgba(0,0,0,.9)) ,url(../gallery/carbg01.jpg);
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -234,39 +170,29 @@ body{
 
             //menushow
             .hamburgermenushow{
-                margin: 0;
-                display: flex;
-                flex-direction: column;
+                @include whm(28%,100%,0);
+                @include flexcol;
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 28%;
-                height: 100%;
                 z-index: 1000;
                 align-items: center;
                 text-align: center;
                 background-color: $black-color;
-                align-items: center;
                 box-shadow: 0 0 6px $black-color;
                 ul{
-                    margin: 0;
+                    @include whm(100%,100%,0);
+                    @include flexcol;
                     position: absolute;
                     top: 0;
                     left: 0;
-                    width: 100%;
-                    height: 100%;
-                    display: flex;
-                    flex-direction: column;
                     text-align: center;
                     align-items: center;
                     li{
-                        width: 100%;
+                        @include whm(100%,auto,0 10% 0 0);
                         display: inline-block;
                         list-style: none;
                         font-size: 1.3em;
-                        margin: 0 10% 0 0;
-                        width: 100%;
-                        height: auto;
                         border-bottom: 1px groove $grey-color;
                         &:nth-child(5){
                             border-bottom: none;
@@ -277,14 +203,12 @@ body{
                     }
                     a{
                         padding: 5% 0;
-                        width: 100%;
-                        height: auto;
+                        @include whm(100%,auto,0);
                         display: inline-block;
                         text-decoration: none;
                         color: $grey-color;
                         font-weight: 900;
                         cursor: pointer;
-                        margin:0;
                         &:hover{
                             color: $gold-color;
                         }
@@ -320,10 +244,8 @@ body{
 
             }
             .swipertitle{
-                width: 100%;
-                height: 30%;
-                display: flex;
-                flex-direction: column;
+                @include whm(100%,30%,auto);
+                @include flexcol;
                 text-align: center;
                 z-index: 1;
                 //animation: showtitle 3s forwards;
@@ -358,8 +280,7 @@ body{
                 }
             }
             .titlesection{
-                display: flex;
-                flex-direction: column;
+                @include flexcol;
                 margin: 0;
                 color: $white-color;
                 text-align: center;
@@ -371,39 +292,21 @@ body{
                 }
             }
             .swiper-wrapper{
-                width: 100%;
-                height: 100%;
-                margin: 0;
+                @include whm(100%,100%,0);
                 text-align: center;
                 .swiper-slide{
-                    width: 100%;
-                    height: 100%;
-                    margin: 0;
+                    @include whm(100%,100%,0);
                     color: $white-color;
                     .swipergallery{
-                        width: 100%;
-                        height: 70%;
-                        display: flex;
-                        flex-direction: column;
+                        @include whm(100%,70%,0);
+                        @include flexcol;
                         justify-content: center;
                         align-items: center;
                         z-index: 100;
                         .pictureswiper{
                             display: flex;
-                            .svj011{
-                                width: 40%;
-                                height: auto;
-                                margin: auto auto 2% auto;
-                            }
-                            .sroadster011{
-                                width: 40%;
-                                height: auto;
-                                margin: auto auto 2% auto;
-                            }
-                            .s011{
-                                width: 40%;
-                                height: auto;
-                                margin: auto auto 2% auto;
+                            .svj011,.sroadster011,.s011{
+                                @include whm(40%,auto,auto auto 2% auto);
                             }
                         }
                     }
